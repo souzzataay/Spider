@@ -1,0 +1,44 @@
+*, *:after, *:before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mukta', sans-serif;
+}
+
+@import 'partials/colors';
+@import 'partials/spacing';
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    background: $blue-dark;
+}
+
+img, svg{
+    //imagens se adaptam a tela
+    display: block;
+    width: 100%;
+}
+
+a{
+    text-decoration: none; //tira os sublinhados dos links
+    color: $white;
+}
+
+.border{
+    border: 1px solid red;
+}
+
+p{
+    font-size: 16px;
+    color: $gray-1;
+    letter-spacing: 1px;
+    line-height: 140%;
+    text-align: justify;
+}
+
+@import 'partials/layout';
+@import 'partials/menu';
+@import 'partials/buttons';
+@import 'partials/animations';
